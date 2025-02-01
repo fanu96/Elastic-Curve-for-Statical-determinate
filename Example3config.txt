@@ -1,0 +1,15 @@
+PS C:\Users\Fanu\Pictures\Project> python3 trial9.py
+Enter the length of the beam (m): 100
+Enter the number of supports: 1
+Support 1:
+Enter the position along the beam (m) left to right: 0 
+Enter the type of support (pinned, roller, or fixed): fixed
+Enter the number of loads: 1
+Load 1:
+Enter the type of load (point, distributed, or moment): point
+Enter point load magnitude (N): 100
+Enter the position along the beam (m) left to right: 50
+The beam is statically determinate.
+Is the beam's EI constant? (y/n): y
+Enter the value of E (Pa): 234
+Enter the value of I (m^4): 234

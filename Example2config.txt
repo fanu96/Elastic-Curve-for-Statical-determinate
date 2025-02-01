@@ -1,0 +1,21 @@
+Enter the length of the beam (m): 100
+Enter the number of supports: 2
+Support 1:
+Enter the position along the beam (m) left to right: 50
+Enter the type of support (pinned, roller, or fixed): pinned
+Support 2:
+Enter the position along the beam (m) left to right: 100
+Enter the type of support (pinned, roller, or fixed): roller
+Enter the number of loads: 2
+Load 1:
+Enter the type of load (point, distributed, or moment): point
+Enter point load magnitude (N): 10
+Enter the position along the beam (m) left to right: 30
+Load 2:
+Enter the type of load (point, distributed, or moment): point
+Enter point load magnitude (N): 20
+Enter the position along the beam (m) left to right: 70
+The beam is statically determinate.
+Is the beam's EI constant? (y/n): y
+Enter the value of E (Pa): 234
+Enter the value of I (m^4): 234
