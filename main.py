@@ -106,7 +106,7 @@ def calculate_beam_deflection():
                 except ValueError:
                     print("Error: Positions must be numbers.")
             elif load_type == "moment":
-                magnitude = float(input("Enter moment magnitude (Nm): "))
+                magnitude = float(input("Enter moment magnitude (Nm) (clockwise +): "))
                 position = input("Enter the position along the beam (m) left to right: ")
                 loads.append({"type": "moment", "magnitude": magnitude, "position": position})  
                 break       
@@ -302,7 +302,7 @@ def calculate_beam_deflection():
             vertical_reactions.append(R)
             moment_reactions.append(M)
             reaction_symbols.extend([R, M])
-            M_total += R * sp.SingularityFunction(x, pos, 1) + M * sp.SingularityFunction(x, pos, 0)
+            M_total += R * sp.SingularityFunction(x, pos, 1) - M * sp.SingularityFunction(x, pos, 0)
 
     # add loads to the moment equation
     for load in loads:
